@@ -10,7 +10,7 @@ const Member = async () => {
   }
 
   return (
-    <div>
+    <div className="text-white">
       <h1>Member Server Session</h1>
       <p>{session?.user?.email}</p>
       <p>{session?.user?.name}</p>

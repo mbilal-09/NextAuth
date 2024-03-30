@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import UserForm from "../(components)/UserForm";
 
 const CreateUser = () => {
+  
   return (
-    <div>Only Admins!</div>
-  )
-}
+    <div className="text-white">
+      Only Admins!
+      <UserForm />
+    </div>
+  );
+};
 
-export default CreateUser
+export default CreateUser;

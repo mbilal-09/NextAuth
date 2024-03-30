@@ -13,7 +13,7 @@ const Member = () => {
   });
   
   return (
-    <div>
+    <div className="text-white">
       <h1>Member Client Session</h1>
       <p>{session?.user?.email}</p>
       <p>{session?.user?.name}</p>
