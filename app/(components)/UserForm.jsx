@@ -45,7 +45,7 @@ const UserForm = () => {
       <form
         onSubmit={handleSubmit}
         method="post"
-        className="flex flex-col gap-4 w-1/2 text-white bg-neutral-900 m-4 p-4 rounded-lg mx-auto"
+        className="flex flex-col gap-4 w-1/2 text-white bg-neutral-900 m-4 p-4 rounded-lg"
       >
         <h1 className="text-2xl font-bold">Create User</h1>
         <label>Name:</label>
@@ -78,7 +78,7 @@ const UserForm = () => {
         <input
           type="submit"
           value={submitValue}
-          className="bg-neutral-800 w-fit rounded-md p-3 self-end mt-4"
+          className="bg-neutral-800 w-fit rounded-md p-3 self-end mt-4 cursor-pointer hover:bg-[--primary] duration-300"
         />
       </form>
       {errorMessage ? (
