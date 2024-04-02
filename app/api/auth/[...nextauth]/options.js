@@ -8,7 +8,6 @@ import CredentialsProvider from "next-auth/providers/credentials";
 import AtlassianProvider from "next-auth/providers/atlassian";
 import Auth0Provider from "next-auth/providers/auth0";
 import DiscordProvider from "next-auth/providers/discord";
-import DropboxProvider from "next-auth/providers/dropbox";
 import FacebookProvider from "next-auth/providers/facebook";
 import GitlabProvider from "next-auth/providers/gitlab";
 
@@ -135,20 +134,6 @@ export const options = {
       },
       clientId: process.env.DISCORD_ID,
       clientSecret: process.env.DISCORD_SECRET,
-    }),
-    DropboxProvider({
-      profile(profile) {
-        console.log("Dropbox Profile: ", profile);
-
-        let userRole = "Dropbox User";
-
-        return {
-          ...profile,
-          role: userRole,
-        };
-      },
-      clientId: process.env.DROPBOX_ID,
-      clientSecret: process.env.DROPBOX_SECRET,
     }),
     FacebookProvider({
       profile(profile) {
